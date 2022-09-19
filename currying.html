@@ -1,0 +1,26 @@
+<!-- <script>
+    function inpo(x){
+        return function(y){
+            console.log(x*y);
+        }
+    }
+    let result=inpo(5);
+    result(8);
+</script> -->
+
+<script>
+    function inpit(a){
+        return function(b){
+            return function(c){
+                return a+b+c;
+            }
+        }
+    }
+    // let result=inpit(6);
+    // let result1=result(5);
+    // let result2=result1(1);
+    // console.log(result2);
+
+    let result=inpit(6)(5)(1);
+     console.log(result);
+</script>

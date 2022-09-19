@@ -1,0 +1,58 @@
+<!-- <script>
+    var arr={
+        name:'rohit',
+        age:54,
+        salary:500000,
+        display(){
+        console.log();
+        return 0;
+        },
+        addition:function(a,b){
+        return a+b;
+        }
+    }
+    console.log(arr.addition(10,20));
+</script>
+ -->
+
+<!-- <script>
+    var arr={
+        name:'rohit',
+        salary:80000,
+        age:27,
+        location:'mumbai',
+        display(){
+            console.log(this);
+            return this.name;
+        },
+        addition(a,b){
+        return a+b;
+        }
+    }
+    console.log(arr.display());
+    console.log(arr.addition(10,20));
+</script>
+ -->
+
+ <script>
+    var employee={
+        fullName:"salman",
+        age:44,
+        location:"bangalore",
+        display(){
+            console.log(this);
+            return this.fullName;
+        },
+        addition(a,b){
+            this.result = a+b;
+            return a+b;
+        }
+    }
+    var key = Object.keys(employee);
+    console.log(key);
+    var val = Object.values(employee);
+    console.log(val);
+    var entries = Object.entries(employee);
+    console.log(entries);
+</script>
+

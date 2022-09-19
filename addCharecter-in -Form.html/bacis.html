@@ -1,0 +1,50 @@
+<!-- <html>
+    <head>
+    </head>
+    <body>
+        <input type="text" id="inputOne"/>
+        <br/>
+        <br/>
+        <button onClick="onSubmitHandler()">Submit</button>
+        <br/>
+        <br/>
+        <h1 id="result"></h1>
+        <script>
+            function onSubmitHandler(){
+                let input = document.querySelector("#inputOne").value;
+
+                let pattern = /javascript/;
+                let result = pattern.test(input);
+                if(result){
+                    document.querySelector("#result").innerHTML = "The values matched is found";
+                }
+               else{
+                   document.querySelector("#result").innerHTML = "The value matched is not found";
+               }
+            }
+        </script>
+    </body>
+</html> -->
+
+<html>
+    <head></head>
+    <body>
+        <input type="text" id="demo">
+        <br/>
+        <button onclick="onebutton()">Summit</button>
+        <br/>
+        <div id="resu"></div>
+        <script>
+            function onebutton(){
+                let input=document.querySelector("#demo").value;
+                let pattern=/^javascript$/;
+                let result=pattern.test(input);
+                if(result){
+                    document.querySelector("#resu").innerHTML="element are match";
+                }else{
+                    document.querySelector("#resu").innerHTML="elwment are not match";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!-- <script>
+    
+    let input=[2,2,5,1,6,1,7,3,3,4];
+     let result=input.filter((x,y,z)=>z.indexOf(x)===y);
+     console.log(result);
+      
+    
+</script> -->
+<script>
+    
+    let input=[2,2,5,1,6,1,7,3,3,4];
+     let result=input.filter(function(x,y,z){
+        return z.indexOf(x)===y;
+        
+     });
+     console.log(result);
+      
+    
+</script>

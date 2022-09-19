@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var list = [41,10,12,15,43,11,23,32];
+        var result =list.sort(function(a,b){
+            return a-b;
+        })
+        console.log("this methord use for assinding order",result);
+    </script>
+    <script>
+        var list = [10,25,14,85,62,42,35,11,36];
+        var resultOne =list.sort(function(a,b){
+            return b-a;
+        })
+        console.log("this methord use for disending order",resultOne)
+    </script>
+</body>
+</html>

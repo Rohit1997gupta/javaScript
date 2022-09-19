@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <bod>
+        <div id="container">
+            <h1>Welcome to javascript</h1>
+            <div>
+                <ul>
+                    <li>Hellow</li>
+                    <li>India</li>
+                    <li>I am</li>
+                    <li>Coming</li>
+                </ul>
+            </div>
+            <script>
+                var element=document.createElement("li");
+                element.id="demo";
+                element.innerHTML="Hello world";
+                console.log(element);
+
+                var ul=document.querySelector('ul');
+                ul.appendChild(element);
+                console.log(ul);
+            </script>
+        </div>
+    </bod>
+</html>

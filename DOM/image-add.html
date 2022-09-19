@@ -1,0 +1,42 @@
+<!-- <html>
+    <head></head>
+    <body>
+        <div >
+            <img id="image">
+        </div>
+    </body>
+    <script>
+        var list=document.getElementById("image");
+        console.log(list);
+        if(list){
+            list.src='https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg';
+        }
+    </script>
+</html> -->
+
+
+
+<html>
+    <head>
+        <style>
+            #image{
+                height: 500px;
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <div >
+            <img id="image">
+        </div>
+    </body>
+    <script>
+        var list=document.getElementById("image");
+        console.log(list);
+        if(list){
+            list.src='https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg';
+        }
+        list.innerHTML="image";
+        list.classList.add("image");
+    </script>
+</html>

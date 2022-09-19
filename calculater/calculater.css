@@ -1,0 +1,27 @@
+ .cal{
+    text-align: center;
+ }
+ body{
+    background-color: blue;
+ }
+ #button{
+    margin: 5px;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(235, 101, 101);
+
+ }
+ .container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+ }
+ .input{
+ border: 1px solid black;
+   padding: 10px 20px;
+   border-radius: 5px;
+
+ }

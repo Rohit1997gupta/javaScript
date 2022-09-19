@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onClick="opens()">open</button>
+    <button onClick="closed()">closed</button>
+    <script>
+        
+        function opens(){
+           window.open('https://www.flipkart.com','blank','width=400px , height=300px');
+        }
+        function closed(){
+            window.close();
+        }
+    </script>
+</body>
+</html>
+
+<!-- <html>
+    <head>
+    </head>
+    <body>
+        <button onClick="onOpenHandler()">Open the flipkart</button>
+        <button onClick="onCloseHandler()">close the flipkart</button>
+        <script>
+            let input;
+            function onOpenHandler(){
+               input = window.open('https://www.flipkart.com','_blank','width=300px,height=200px,left=350px,top=200px');
+            }
+            function onCloseHandler(){
+                  input.close();
+            }
+        </script>
+    </body>
+</html> -->

@@ -1,0 +1,18 @@
+<script>
+    let company=[
+      {name:'rohit',cast:'gupta',age:25},
+      {name:'rohit',cast:'gupta',age:50},
+      {name:'rohit',cast:'gupta',age:28},
+      {name:'rohit',cast:'gupta',age:50},
+      {name:'rohit',cast:'gupta',age:25},
+    ]
+    let output=company.reduce(function(a,b){
+         if(a[b.age]){
+          a[b.age]=++a[b.age];
+         }else{
+          a[b.age]=1;
+         }
+         return a;
+    },{})
+    console.log(output);
+  </script>

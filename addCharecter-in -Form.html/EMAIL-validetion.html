@@ -1,0 +1,35 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <input type="text"  id="inputOne"/>
+        <div id="error" style="color:red"></div>
+        <br/>
+        <br/>
+        <button onClick="onSubmitHandler()">Submit</button>
+        <br/>
+        <br/>
+        <h1 id="result"></h1>
+        <script>
+            function onSubmitHandler(){
+                let input = document.querySelector("#inputOne").value;
+                // let pattern=/^[0-9a-zA-Z]{4,50}@gmail\.(com|in)$/
+
+                // let pattern=/^[0-9a-zA-Z\.]{4,50}@gmail\.(com|in)$/
+
+
+                let pattern=/^[0-9a-zA-Z\.]{4,50}@[a-zA-Z]\.(com|in)$/
+                // any think u can write after @ 
+                let result = pattern.test(input);
+                if(result){
+                    document.querySelector("#result").innerHTML = "The values matched is found";
+                    document.querySelector("#error").innerHTML = "";
+                }
+               else{
+                   document.querySelector("#result").innerHTML = "The value matched is not found";
+                   document.querySelector("#error").innerHTML = "please write vatid @gmail.com or in";
+                }
+            }
+        </script>
+    </body>
+</html>

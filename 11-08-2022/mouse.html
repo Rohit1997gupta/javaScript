@@ -1,0 +1,58 @@
+<!-- <html>
+    <head>
+        <style>
+            #demo{
+                width: 500px;
+                height: 400px;
+            }
+        </style>
+    </head>
+    <bod>
+        <div id="demo">
+
+        </div>
+
+    </bod>
+    <script>
+        var list=document.getElementById("demo");
+    list.addEventListener("mouseover",function(event){
+        list.style.backgroundColor="red";
+    });
+    list.addEventListener('mouseout',function(event){
+        list.style.backgroundColor="black";
+    });
+    list.addEventListener("mousedown",function(event){
+        list.style.backgroundColor="yellow";
+    })
+
+    </script>
+</html> -->
+
+<html>
+    <head>
+        <style>
+            #demo{
+                width: 500px;
+                height: 400px;
+            }
+        </style>
+    </head>
+    <bod>
+        <div id="demo"></div>
+    </bod>
+    <script>
+        var list=document.getElementById("demo");
+        list.addEventListener("mouseover",down);
+        list.addEventListener("mousedown",down);
+        list.addEventListener("mouseout",out);
+        function over(event){
+            list.style.backgroundColor="blue";
+        };
+        function down(event){
+            list.style.backgroundColor="green";
+        };
+        function out(event){
+            list.style.backgroundColor="black";
+        };
+    </script>
+</html>

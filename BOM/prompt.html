@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onClick="Promt()">click Button</button>
+    <div id="demo"></div>
+    <script>
+   let result=window.prompt("Enter your name ");
+   if(result){
+    document.getElementById("demo").innerHTML=result;
+   }
+   else{
+    document.getElementById("demo").innerHTML="user has not enter name";
+   }
+    </script>
+</body>
+</html>

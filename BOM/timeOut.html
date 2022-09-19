@@ -1,0 +1,78 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onClick="settime()">Set time</button>
+    <button onClick="onTimeOut()">clear time</button>
+    <div id="demo"></div>
+    <script>
+        function settime(){
+            window.setTimeout(function(){
+             document.querySelector("#demo").innerHTML="time runing currentely";
+            },3000);
+        }
+        function onTimeOut(){
+            window.clearTimeout();
+            document.querySelector("#demo").innerHTML="stop";
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!-- multiple timers :
+10:41
+<html>
+    <head>
+    </head>
+    <body>
+        <button onclick="onStartTimerHandler()">Start the timer</button>
+        <button onclick="onCloseTimerHandler()">close the timer</button>
+        <div id="demo"></div>
+        <script>
+            let input;
+            function onStartTimerHandler(){
+                input = window.setTimeout(function(){
+                    //any code you write here
+                    document.querySelector("#demo").innerHTML = "The function timer is running on 3000";
+                },3000);
+                window.setTimeout(function(){
+                    document.querySelector("#demo").innerHTML = "The function timer is running on 5000";
+                },5000)
+                //3000 milliseconds = 3 seconds
+            }
+            function onCloseTimerHandler(){
+                  clearTimeout(input);
+                   document.querySelector("#demo").innerHTML = "we stopped the timer";
+            }
+        </script>
+    </body>
+</html> -->
+
+
+
+passing input parameter to settimeout function
+10:44
+<html>
+    <head>
+    </head>
+    <body>
+        <button onclick="onStartTimerHandler()">Start the timer</button>
+        <div id="demo"></div>
+        <script>
+            let input;
+            function onStartTimerHandler(){
+                input = window.setTimeout(function(input,output){
+                    //any code you write here
+                    console.log(input,output);
+                    document.querySelector("#demo").innerHTML = "The function timer is running on 3000";
+                },3000,"akash","suresh");
+            }
+        </script>
+    </body>
+</html>

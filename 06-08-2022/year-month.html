@@ -1,0 +1,90 @@
+<script>
+    var date= new Date();
+    var year=date.getFullYear();
+    console.log(year);
+</script>
+
+
+<script>
+    var date = new Date();
+    var year = date.getFullYear();
+    console.log(year);
+    var month = date.getMonth();
+    console.log(month);
+    var monthList = ["January","Febuary","March","April","May","June","July","August","September","October","November","December"];
+    var currentMonth = monthList[month];
+    console.log(currentMonth);
+</script>
+
+
+
+<script>
+    var date = new Date();
+    var year = date.getFullYear();
+    console.log(year);
+    var month = date.getMonth();
+    //will start from 0
+    console.log(month);
+    var monthList = ["January","Febuary","March","April","May","June","July","August","September","October","November","December"];
+    var currentMonth = monthList[month];
+    console.log(currentMonth);
+    var day = date.getDay();
+    console.log(day);
+    var dayList = ["Sunday","Monday","Tuesday","Wednesday","Thrusday","Friday","Saturday"];
+    var currentDay = dayList[day];
+    console.log(currentDay);
+     var result = currentDay +" "+ currentMonth + " "+ year;
+     console.log(result);
+</script>
+
+
+
+
+<script>
+    var date = new Date();
+    var day = date.getDay()+1;
+    //sunday-0,monday-1,saturday-6
+    console.log(day);
+    var month = date.getMonth()+1;
+    console.log(month);
+    var dateFormat = date.getDate();
+    //1,2,3,4,5.....
+    console.log(dateFormat);
+</script>
+
+
+<script>
+    var date = new Date();
+    var day = date.getDay();
+    //sunday-0,monday-1,saturday-6
+    console.log(day);
+    var month = date.getMonth()+1;
+    console.log(month);
+    var dateFormat = date.getDate();
+    //1,2,3,4,5.....
+    console.log(dateFormat);
+     var result = date.getDate() +"/"+ (date.getMonth()+1) +"/"+ date.getFullYear();
+     console.log(result);
+    //6/7/2022
+</script>
+
+
+<!-- second,minutes, -->
+
+ <script>
+    var date=new Date();
+    var minute=date.getMinutes();
+    var hous=date.getHours();
+    var second=date.getSeconds();
+    var time=date.getTime();
+    var milliseconds=date.getMilliseconds();
+
+
+    console.log(hous,minute,second,time,milliseconds);
+</script>
+ 
+
+
+
+
+

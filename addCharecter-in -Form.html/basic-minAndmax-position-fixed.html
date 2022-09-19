@@ -1,0 +1,43 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <input type="text" id="inputOne"/>
+        <br/>
+        <br/>
+        <button onClick="onSubmitHandler()">Submit</button>
+        <br/>
+        <br/>
+        <h1 id="result"></h1>
+        <script>
+            function onSubmitHandler(){
+                let input = document.querySelector("#inputOne").value;
+                // minimun 4 add kro
+                // let pattern=/^[0-9]{4,}$/;
+
+                // maximum 10  and min 2 value add kro
+                // let pattern=/^[0-9]{3,10}$/;
+
+                // max 10 
+                let pattern=/^[0-9]{10}$/;
+
+                let result = pattern.test(input);
+                if(result){
+                    document.querySelector("#result").innerHTML = "The values matched is found";
+                }
+               else{
+                   document.querySelector("#result").innerHTML = "The value matched is not found";
+               }
+            }
+        </script>
+    </body>
+</html>
+
+
+
+<!-- Min and max:
+*    min - 0 max - n
++    min - 1 max - n
+{4,10} min - 4 max -10
+{3,}  min - 3 max - n
+{10} min-10 max-10 -->

@@ -1,0 +1,79 @@
+<!-- <script>
+    function x(){
+        let a=7;
+        function y(){
+            console.log(a);
+        }
+        y();
+    }
+    x();
+</script> -->
+
+<!-- <script>
+    function x(){
+        let a=7;
+        function y(){
+            console.log(a);
+        }
+        return y;
+    }
+    let z=x();
+    console.log(z);
+    z();
+</script> -->
+<!-- by line number 22 closure are stary -->
+
+
+<!-- <script>
+    function x(){
+        let a=7;
+      return  function y(){
+        // jo upper wale code mai return y or y();  our es code ,ai jo return function y() likha hai sab same hai
+            console.log(a);
+        }
+        
+    }
+    let z=x();
+    console.log(z);
+    z();
+</script> -->
+
+<!-- =============================================================== -->
+
+<!-- <script>
+    function x(){
+        let i=8;
+        // setTimeout bhi ek closore ka hi kam hai.
+        setTimeout(function(){
+            console.log(i);
+        },2000);
+        console.log("Hello Rohit");
+    }
+    x();
+</script> -->
+<!-- ============================================================================ -->
+<script>
+    function x(){
+        for(var i=1; i<=5; i++){
+        setTimeout(function(){
+            console.log(i);
+        },i*1000);
+        
+    }
+    console.log("Hello Rohit");
+}
+    x();
+</script>
+
+<!-- <script>
+    function x(){
+        for(let i=1; i<=5; i++){
+        setTimeout(function(){
+            console.log(i);
+        },i*1000);
+        
+    }
+    console.log("Hello Rohit");
+}
+    x();
+</script> -->

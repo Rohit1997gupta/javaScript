@@ -1,0 +1,17 @@
+<script>
+    const detail={
+        name:"Rohit",
+        age:25,
+        full:function abc(){
+      console.log(this.name);
+        }
+    }
+    detail.full();
+
+    const detail2={
+        name:"Rohit Gupta",
+        age:28,
+        
+    }
+    detail.full.call(detail2);
+</script>

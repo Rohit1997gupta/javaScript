@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <style>
+            .hading{
+                background-color: blue;
+                font-size: 30px;;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="dom"></div>
+        <div id="rohit">Hello Rohit</div>
+    </body>
+    <script>
+        var list=document.getElementById("dom");
+        console.log(list);
+        list.innerHTML='i am ready';
+        list.classList.add("hading");
+        // (classList.add   is use to execiss css file)
+        // (getElementById   is use to exiciss id)
+    </script>
+</html>

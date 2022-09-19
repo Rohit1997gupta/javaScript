@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input id="email" type="tex" onkeydown="emailName()"/>
+  <input id="password" type="tex" onkeydown="passwordName()"/>
+  <input id="number" type="tex" onkeydown="numberName()"/>
+  
+  <script>
+    const emailName=()=>{
+      document.getElementById("number").value="";
+      document.getElementById("password").value="";
+
+    };
+    const numberName=()=>{
+      document.getElementById("email").value="";
+      document.getElementById("password").value="";
+    };
+    const passwordName=()=>{
+      document.getElementById("number").value="";
+      document.getElementById("email").value="";
+
+    }
+  </script>
+</body>
+</html>

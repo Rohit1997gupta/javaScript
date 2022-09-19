@@ -1,0 +1,31 @@
+<!-- <script>
+   const radius=[49,5,6,8];
+   const output=[];
+   function cl(radius){
+    for(let i=0; i<radius.length; i++){
+  output.push(Math.PI*radius[i]*radius[i]);
+    }
+    return output;
+   };
+   console.log(cl(radius));
+</script> -->
+
+<script>
+    const radius=[49,5,6,8];
+  
+    const area=function(radius){
+      return Math.PI*radius*radius;
+    }
+    const circumfrance=function(radius){
+      return 2*Math.PI*radius;
+    }
+    const output=[];
+    function clculation(radi,logic){
+     for(let i=0; i<radius.length; i++){
+   output.push(logic(radius[i]));
+     }
+     return output;
+    };
+    // console.log(clculation(radius,area));
+    console.log(clculation(radius,circumfrance));
+  </script>
